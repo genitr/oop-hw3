@@ -76,8 +76,9 @@ def get_shop_list_by_dishes(dishes: list, person_count: int) -> dict:
 
 if __name__ == '__main__':
     from pprint import pprint
+    print('----------------------Список всех рецетов----------------------')
     pprint(get_cookbook(cookbook_file))
-    print()
+    print('-------------Список ингредиентов для выбранных блюд-------------')
     pprint(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 4))
-    print()
+    print('----------------------------------------------------------------')
     pprint(file_assembling(chapters, 'novel.txt'))
